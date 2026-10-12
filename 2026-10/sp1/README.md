@@ -6,8 +6,9 @@ SP1 Kroužky
 2. Primární a cizí klíče zaci: PK `id_zaka` pak krouzky: PK `id_krouzku` pak prihlasky: PK `id_prihlasky`, FK `id_zaka` → `zaci`, FK `id_krouzku` → `krouzky`
 3. ## 4. ER Diagram
 
+```mermaid
 erDiagram
-    ZAK ||--o{ PRIHLASKA : "přihlašuje se"
+    ZAK ||--o{ PRIHLASKA : "má"
     KROUZEK ||--o{ PRIHLASKA : "obsahuje"
 
     ZAK {
@@ -33,7 +34,7 @@ erDiagram
         int id_krouzku FK
         string zaplaceno
     }
-    
+
 4. SELECT nazev, cena_kc
 FROM krouzky
 WHERE cena_kc > 500;
