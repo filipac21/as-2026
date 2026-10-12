@@ -34,7 +34,7 @@ erDiagram
         int id_krouzku FK
         string zaplaceno
     }
-
+```
 4. SELECT nazev, cena_kc
 FROM krouzky
 WHERE cena_kc > 500;
