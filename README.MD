@@ -27,3 +27,13 @@ erDiagram
         date datum
         int id_zakaznika FK
     }
+    PRODUKT {
+        int id PK
+        string nazev
+        int cena
+    }
+    POLOZKA {
+        int id_objednavky PK FK
+        int id_produktu PK FK
+        int pocet
+    }
