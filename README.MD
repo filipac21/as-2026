@@ -9,9 +9,7 @@ za celý školní rok. Odevzdává se commitem, ne mailem.
 - `2026-10/` — říjen: relační model
 - (další měsíce přibudou)
 
-## Kdo
-Založeno 21. 9. 2026.
-Kód žáka: 13 · třída IT2
+```mermaid
 erDiagram
     ZAKAZNIK ||--o{ OBJEDNAVKA : "zadává"
     OBJEDNAVKA ||--|{ POLOZKA : "obsahuje"
@@ -28,14 +26,4 @@ erDiagram
         int cislo PK
         date datum
         int id_zakaznika FK
-    }
-    PRODUKT {
-        int id PK
-        string nazev
-        int cena
-    }
-    POLOZKA {
-        int id_objednavky PK FK
-        int id_produktu PK FK
-        int pocet
     }
