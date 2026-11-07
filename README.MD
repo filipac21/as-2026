@@ -33,7 +33,7 @@ erDiagram
         int cena
     }
     POLOZKA {
-        int id_objednavky PK FK
-        int id_produktu PK FK
+        int id_objednavky PK
+        int id_produktu PK
         int pocet
     }
