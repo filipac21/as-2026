@@ -9,7 +9,6 @@ za celý školní rok. Odevzdává se commitem, ne mailem.
 - `2026-10/` — říjen: relační model
 - (další měsíce přibudou)
 
-```mermaid
 erDiagram
     ZAKAZNIK ||--o{ OBJEDNAVKA : "zadává"
     OBJEDNAVKA ||--|{ POLOZKA : "obsahuje"
